@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sara Ahmad | CV Website</title>
+  <meta name="description" content="Sara Ahmad - Junior Software Developer. Single page CV with fixed profile sidebar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="layout">
+    <!-- FIXED SIDEBAR -->
+    <aside class="sidebar">
+      <img src="image.jpeg" alt="Sara Ahmad profile picture" class="avatar" />
+      <h1>Sara Ahmad</h1>
+      <p class="role">Junior Software Developer</p>
+
+      <nav class="side-nav" id="sideNav">
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="side-contact">
+        <a href="mailto:itssara198@gmail.com">itssara198@gmail.com</a>
+        <a href="tel:+92 1234567898">+92 123 456 7891</a>
+        <span>Bahria Town, Lahore</span>
+      </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+     
+<section id="profile" class="block reveal">
+  <h2>Profile</h2>
+
+  <p>
+    CS undergraduate skilled in C++, Python, SQL, and Web Development.
+    Strong foundation in Data Structures and DBMS, with hands-on
+    experience in building browser extensions and database projects.
+    Passionate about problem-solving and software engineering.
+  </p>
+
+  <div class="btn-row profile-buttons">
+    <a class="btn btn-primary" href="CV.pdf" target="_blank" rel="noopener">
+      View CV
+    </a>
+
+    <a class="btn btn-ghost" href="CV.pdf" download>
+      Download CV
+    </a>
+
+    
+
+<button class="btn btn-ghost" type="button" onclick="showTab('certificatesPanel')">
+  View Certificates
+</button>
+
+
+</section>
+
+
+<section id="certificatesPanel" class="block certificate-panel">
+  <h2>My Certificates</h2>
+
+  <div class="certificate-grid">
+
+    <div class="certificate-card">
+      <h3>Use of AI Responsibly</h3>
+      <a href="certificates/Use of AI Responsibly.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>Google AI Essentials</h3>
+      <a href="certificates/Google AI Essentials.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>Intro to AI course-era</h3>
+      <a href="certificates/Intro to AI course-era.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>AI Fundamentals Certification</h3>
+      <a href="certificates/AI Fundamentals Certification.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>Discover the art of prompting</h3>
+      <a href="certificates/Discover the art of prompting.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+    </div>
+
+  </div>
+
+  <button class="btn btn-ghost" type="button" onclick="showTab('profile')">
+    ← Back to Profile
+  </button>
+</section>
+
+
+
+
+      <section id="skills" class="block reveal">
+        <h2>Skills</h2>
+        <div class="skill-row"><h3>Programming Languages</h3>
+          <div class="bar-list">
+            <div class="bar"><span>C++</span><i style="--w:85%"></i></div>
+            <div class="bar"><span>Python</span><i style="--w:80%"></i></div>
+            <div class="bar"><span>SQL</span><i style="--w:85%"></i></div>
+            <div class="bar"><span>HTML5 / CSS3</span><i style="--w:85%"></i></div>
+            <div class="bar"><span>JavaScript</span><i style="--w:75%"></i></div>
+          </div>
+        </div>
+        <div class="skill-row"><h3>Core CS Concepts</h3>
+          <div class="chips"><span>Data Structures &amp; Algorithms</span><span>DBMS</span><span>Operating System Mechanics</span><span>OOP</span></div>
+        </div>
+        <div class="skill-row"><h3>Tools &amp; Technologies</h3>
+          <div class="chips"><span>SQL / SQL*</span><span>Google Colab</span><span>Ubuntu / Linux</span><span>Git &amp; GitHub</span><span>MS Office Suite</span></div>
+        </div>
+        <div class="skill-row"><h3>Soft Skills</h3>
+          <div class="chips"><span>Problem-Solving</span><span>Algorithmic Thinking</span><span>Technical Documentation</span><span>Team Collaboration</span><span>Presentations</span></div>
+        </div>
+        <div class="skill-row"><h3>Languages</h3>
+          <div class="chips"><span>English</span><span>Urdu</span><span>Arabic</span></div>
+        </div>
+      </section>
+
+      <section id="education" class="block reveal">
+        <h2>Education</h2>
+        <div class="entry">
+          <span class="date">2024 - 2028</span>
+          <h3>Bachelors in Computer Science</h3>
+          <p>Qarshi University, Lahore</p>
+        </div>
+        <div class="entry">
+          <span class="date">2022 - 2024</span>
+          <h3>Intermediate with Biology (FSc Pre-Medical)</h3>
+          <p>Kips College</p>
+        </div>
+      </section>
+
+      <section id="experience" class="block reveal">
+        <h2>Experience</h2>
+        <div class="entry">
+          <h3>Zen Glitch – Anti-Procrastination Screen Overlay (Chrome Extension)</h3>
+          <p class="stack">HTML, CSS, JavaScript</p>
+          <ul>
+            <li>Designed and built a customizable work-break timer Chrome extension to manage productivity and prevent procrastination.</li>
+            <li>Implemented interactive UI/UX components, ambient sound integration, and dynamic screen-locking overlay scripts.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>Database System &amp; SQL Querying Module</h3>
+          <p class="stack">SQL, DBMS Concepts</p>
+          <ul>
+            <li>Modeled relational database schemas, designed ER diagrams, and wrote complex SQL queries for data extraction and joins.</li>
+            <li>Applied normalization techniques to optimize table structures and eliminate redundant data.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>Data Structures &amp; Algorithm Implementations</h3>
+          <p class="stack">C++ / Python</p>
+          <ul>
+            <li>Developed custom data structure solutions including Huffman Tree encoding/decoding calculations, sorting algorithms, and tree traversals.</li>
+            <li>Optimized time and space complexity for various algorithmic tasks as part of coursework logic design.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="block reveal">
+        <h2>Contact</h2>
+        <p>Let's connect! Reach out for opportunities, collaborations or just to say hi.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="mailto:itssara198@gmail.com">Email Me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/sara-ahmad-3b82b2364" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+
+      <footer class="footer">&copy; <span id="year"></span> Sara Ahmad</footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
